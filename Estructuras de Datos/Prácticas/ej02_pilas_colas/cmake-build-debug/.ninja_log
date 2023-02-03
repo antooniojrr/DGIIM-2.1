@@ -1,0 +1,25 @@
+# ninja log v5
+0	238	1666716624653351006	CMakeFiles/maxqueue.dir/estudiante/src/maxqueue.cpp.o	e09b7c061968436
+1	14	1666716707406980391	libmaxqueue.a	bca129ea61bc15e8
+1	191	1666716774852395372	CMakeFiles/cola_max.dir/estudiante/src/cola_max.cpp.o	4137e45b77a78145
+0	229	1666716774888396145	CMakeFiles/maxqueue.dir/estudiante/src/maxqueue.cpp.o	e09b7c061968436
+229	235	1666716774896396317	libmaxqueue.a	bca129ea61bc15e8
+0	198	1666716841265854963	CMakeFiles/maxqueue.dir/estudiante/src/maxqueue.cpp.o	e09b7c061968436
+198	202	1666716841269855053	libmaxqueue.a	bca129ea61bc15e8
+202	235	1666716841301855771	cola_max	bc003ebdace43711
+0	181	1666718950455443589	CMakeFiles/cola_max.dir/estudiante/src/cola_max.cpp.o	4137e45b77a78145
+0	209	1666718950483443681	CMakeFiles/maxqueue.dir/estudiante/src/maxqueue.cpp.o	e09b7c061968436
+209	212	1666718950487443693	libmaxqueue.a	bca129ea61bc15e8
+212	247	1666718950519443798	cola_max	bc003ebdace43711
+1	200	1666718990355582615	CMakeFiles/maxqueue.dir/estudiante/src/maxqueue.cpp.o	e09b7c061968436
+200	204	1666718990359582629	libmaxqueue.a	bca129ea61bc15e8
+204	238	1666718990395582764	cola_max	bc003ebdace43711
+0	201	1666719133392224397	CMakeFiles/maxqueue.dir/estudiante/src/maxqueue.cpp.o	e09b7c061968436
+201	205	1666719133396224417	libmaxqueue.a	bca129ea61bc15e8
+205	238	1666719133428224584	cola_max	bc003ebdace43711
+0	228	0	CMakeFiles/doc_doxygen	4612d01988476bb
+0	228	0	/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/doc_doxygen	4612d01988476bb
+0	68	0	CMakeFiles/doc_doxygen	4612d01988476bb
+0	68	0	/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/doc_doxygen	4612d01988476bb
+0	61	0	CMakeFiles/doc_doxygen	4612d01988476bb
+0	61	0	/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/doc_doxygen	4612d01988476bb

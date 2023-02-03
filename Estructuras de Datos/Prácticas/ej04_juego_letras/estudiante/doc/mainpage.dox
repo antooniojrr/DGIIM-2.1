@@ -1,0 +1,112 @@
+/*! \mainpage Práctica 4 - Juego de las letras
+
+# Introducción
+
+En esta práctica retomaremos el juego de las letras de la práctica anterior, manejando una estructura de datos
+alternativa para tratar de dar una solución más eficiente al mismo.
+
+### Recordemos en qué consiste una partida del juego de las letras:
+
+El objetivo es formar la mejor palabra posible (dependiendo de uno de los dos criterios que explicamos a continuación)
+a partir de un conjunto de letras extraídas al azar de una bolsa. Por ejemplo, dadas las siguientes letras:
+
+- O D Y R M E T
+
+Una buena solución posible sería *METRO*. El número de letras que se juegan en cada partida se
+decide de antemano, y las letras disponibles pueden repetirse. Existen dos modalidades de juego:
+
+- *Juego a longitud:* En este modo de juego se tiene en cuenta sólo la longitud de las palabras,
+  y gana la palabra más larga encontrada.
+- *Juego a puntos:* En este modo de juego a cada letra se le asigna una puntuación, y la
+  puntuación de la palabra será igual a la suma de las puntuaciones de las letras que la
+  componen.
+
+En esta práctica modificaremos la implementación del TDA Dictionary de la práctica anterior
+utilizando como contenedor subyacente un *árbol LCRS* (Left-Child Right-Sibling). De esta forma,
+podremos almacenar nuestro diccionario con menos espacio y crear un solver más eficiente.
+Concretamente:
+1. Necesitaremos almacenar menos información para representar el diccionario completo (lo
+podremos comprobar contando el número de letras almacenadas en total).
+2. Podremos recuperar más rápidamente las palabras que se pueden formar dado un vector de
+letras, ya que la estructura de árbol en la que almacenaremos el diccionario nos permitirá
+explorar las posibles soluciones de una forma bastante eficiente.
+
+# Ejecutables
+
+## diccionario
+
+Programa cuyo funcionamiento es simple:
+- Se carga el contenido del archivo que se pasa como argumento en un diccionario con estructura de árbol
+- Se recorre el diccionario creado con un iterador, y se imprimen por pantalla todas sus palabras.
+
+Este programa comprueba el funcionamiento correcto del iterador implementado. Si está bien implementado,
+el programa deberá funcionar con normalidad.
+
+### Ejemplo de ejecución
+
+@image html diccionario.png
+
+## partida_letras
+
+Para probar el funcionamiento de nuestro TDA, vamos a implementar un programa que recibirá
+cuatro argumentos:
+
+1. Ruta al archivo que contiene el diccionario
+2. Ruta al archivo que contiene las letras y su puntuación
+3. Modo de juego (L = longitud, P = puntuación)
+4. Cantidad de letras para la partida
+
+Dicho programa se encargará de construir el LettersSet para la partida a partir del archivo de letras,
+el Dictionary con las palabras que se consideran soluciones correctas, el Solver que va a jugar la
+partida y la LettersBag que se utilizará para extraer las letras. Una vez construidos los TDAs
+necesarios, extraerá las letras con las que se jugará la partida, utilizará el Solver para buscar las
+soluciones, e imprimirá por pantalla tanto las letras para la partida como las mejores soluciones que
+se pueden obtener con dichas letras y la puntuación de dichas soluciones.
+
+### Ejemplo de ejecución
+
+@image html partida_letras.png
+
+## palabras_validas_diccionario
+
+Para comprobar el funcionamiento correcto del iterador de palabras válidas, se proporciona el
+archivo palabras_validas_diccionario.cpp. El funcionamiento de este archivo es simple:
+
+- Se carga el contenido del archivo que se pasa como argumento en un diccionario con
+  estructura de árbol.
+- El resto de argumentos que se pasan en la llamada al programa son las letras disponibles
+  que se utilizan para formar palabras.
+- Se recorre el diccionario creado con un iterador, y se imprimen por pantalla sus palabras
+  válidas según las letras especificadas.
+
+Si el iterador anterior está correctamente implementado, el programa deberá funcionar con
+normalidad, devolviendo las palabras válidas en orden alfabético.
+
+### Ejemplo de ejecución
+
+@image html palabras_validas_diccionario.png
+
+## partida_letras_eficiente.cpp
+
+Para probar el funcionamiento de nuestro TDA, vamos a implementar un programa que recibirá
+cuatro argumentos:
+
+1. Ruta al archivo que contiene las letras y su puntuación
+2. Ruta al archivo que contiene el diccionario
+3. Modo de juego (L = longitud, P = puntuación)
+4. Cantidad de letras para la partida
+
+Dicho programa se encargará de construir el LettersSet para la partida a partir del archivo de letras,
+el Dictionary con las palabras que se consideran soluciones correctas, el Solver que va a jugar la
+partida y la LettersBag que se utilizará para extraer las letras. Una vez construidos los TDAs
+necesarios, extraerá las letras con las que se jugará la partida, utilizará el Solver para buscar las
+soluciones, e imprimirá por pantalla tanto las letras para la partida como las mejores soluciones que
+se pueden obtener con dichas letras y la puntuación de dichas soluciones.
+
+### Ejemplo de ejecución
+
+@image html partida_letras_eficiente.png
+
+### David Kessler Martínez y Antonio Javier Rodríguez Romero
+
+*/

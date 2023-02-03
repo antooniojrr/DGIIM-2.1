@@ -1,0 +1,7 @@
+/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/maxstack.dir
+/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/maxqueue.dir
+/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/pila_max.dir
+/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/cola_max.dir
+/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/antoniojrr/Escritorio/ED/ej02_pilas_colas/cmake-build-debug/CMakeFiles/rebuild_cache.dir
